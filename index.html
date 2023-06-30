@@ -18,14 +18,16 @@
                 </a>
             </div>
             <div class="right">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#about" onclick="opentab('skills')" class="skills">About</a></li>
                     <li><a href="#about" onclick="opentab('education')" class="education">Education</a></li>
                     <li><a href="#about" onclick="opentab('experience')" class="experience">Experiences</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </div>
         </nav>
     </header>
@@ -248,6 +250,18 @@
             console.log(document.getElementById(tabname),'helloooo target');
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
 
     </script>
