@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Pratina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="sticky">
+            <div class="left">
+                <a href="#banner">
+                    <img src="images/logo-removebg.png" class="logo" alt="logo">
+                </a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about" onclick="opentab('skills')" class="skills">About</a></li>
+                    <li><a href="#about" onclick="opentab('education')" class="education">Education</a></li>
+                    <li><a href="#about" onclick="opentab('experience')" class="experience">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="banner">
+        <div class="container">
+            <div class="header-text">
+                <span id="element"></span>
+                <h1>Hi, I'm <span>Pratina</span> <br>Gopali from Nepal</h1>
+                <a href="images/Pratina-Resume.pdf" class="btn" style="float: left;" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------about------------->
+    <div id="about" style="margin-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-side.jpg" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro">I am an experienced web developer proficient in Python, Django, GIT, JS,
+                        jQuery, HTML5, CSS3, SQL, Pandas, and Jira. With a diverse skill set in these technologies,
+                        I specialize in developing robust and efficient web applications.</p>
+                    <p class="intro">Birthday: May 28, 1996</p>
+
+                    <p class="intro">Phone: +9779843333600</p>
+
+                    <p class="intro">Email: gopali.pratina4@gmail.com</p>
+
+                    <p class="intro">Address: Chandragiri-9, Kathmandu, Nepal</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" id="skills-tab" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" id="experience-tab" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" id="education-tab" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>Developing Websites/Web applications</li>
+                            <li><span>Project Manager</span><br>Managing Projects</li>
+                            <li><span>Software Developer</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2022 - Present</span><br>Software Developer at Saviskar Technologies</li>
+                            <li><span>Feb 2021 - Dec 2021</span><br>Project Manager at Prixa Technologies</li>
+                            <li><span>March 2019 - Feb 2021</span><br>Web Developer at Prixa Technologies</li>
+                            <li><span>Dec 2018 - Feb 2019</span><br>Internship at Sarobar Technologies</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014-2018</span><br>Bachelor of Computer Enginnering from Kathmandu
+                                Engineering
+                                College </li>
+                            <li><span>2012-2014</span><br>Intermediate (10+2) -Science from Kathmandu Model Higher
+                                Secondary School</li>
+                            <li><span>2005-2012</span><br>S.L.C from Bright Future Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------projects------------- -->
+    <div id="projects">
+        <div class="container">
+            <h4 class="sub-title text-center">Recent Projects</h4>
+            <div class="projects-list text-center">
+                <ul class="caption-style-4">
+                    <li>
+                        <a href="https://palikakhabar.com/">
+                            <img src="images/palika-logo.png" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Paila Khabar</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sikka.wvnepal.org/">
+                            <img src="images/sikka-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Sikka</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ratopati.com/">
+                            <img src="images/rato-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Ratopati</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://thahakhabar.com/">
+                            <img src="images/thaha-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>ThahaKhabar</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://lokaantar.com/">
+                            <img src="images/lokantar-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Lokaantar</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bees.prixa.live/">
+                            <img src="images/pharmacy-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Bee's Pharmacy</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://nccweb.prixa.net/">
+                            <img src="images/ncc-logo.png" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>National Cardiac Center</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://masteringedu.prixa.net/">
+                            <img src="images/mastering-logo.jpg" alt="">
+                            <div class="caption">
+                                <div class="blur"></div>
+                                <div class="caption-text">
+                                    <h1>Mastering Education</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact text-center">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="icon fas fa-paper-plane"></i><a href="mailto:gopali.pratina4@gmail.com">gopali.pratina4@gmail.com</a></p>
+                    <p><i class="icon fas fa-phone-square-alt"></i><a href="tel:+9779843333600">+9779843333600</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/prateena.gopali" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://np.linkedin.com/in/pratina-gopali-939405172" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/prateenagopali/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Prateena" target="_blank"><i class="fab fa-github"></i></a>
+
+                    </div>
+                    <a href="images/Pratina-Resume.pdf" download class="btn"> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var navlinks = document.getElementsByClassName("nav-links");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            if (event.currentTarget.classList.contains('skills')){
+               document.getElementById('skills-tab').classList.add('active-link');
+
+            } 
+            else if(event.currentTarget.classList.contains('education')){
+               document.getElementById('education-tab').classList.add('active-link');
+            }
+            else if(event.currentTarget.classList.contains('experience')){
+                document.getElementById('experience-tab').classList.add('active-link');
+            }
+
+            console.log(event.currentTarget,'helloooo target');
+            console.log(document.getElementById(tabname),'helloooo target');
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
